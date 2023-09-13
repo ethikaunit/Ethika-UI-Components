@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ethika</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			box-sizing: border-box;
+			
+		}
+		body{
+			display: flex;
+			place-content: center;
+			background: white;
+
+			
+		}
+		.content{
+			margin-top: 100px;
+			width: 240px;
+			height: 240px;
+			background: gray;
+			border-radius: 50%;
+
+			display: flex;
+			place-items: center;
+			place-content: center;
+		}
+		.content > .outer{
+			position: absolute;
+			width: 170px;
+			height: 170px;
+			background: white;
+			border-radius: 50%;
+			margin-top: -70px;
+			margin-right: 70px;
+			display: flex;
+			place-items: center;
+			place-content: center;
+		}
+		.outer > h1{
+			font-family: montserrat;
+		}
+		.content > .face{
+			width: 240px;
+			height: 240px;
+			background: black;
+			border-radius: 50%;
+		}
+	
+		.face > .eyes{
+			display: flex;
+			transform: rotate(-45deg);
+			margin-left: -20px;
+			margin-top: -10px;
+		}
+		.eyes > .eye1{
+			width: 30px;
+			height: 30px;
+			background: white;
+			border-radius: 50%;
+			margin-left: 55px;
+			margin-top: 170px;
+		}
+		.eyes > .eye2{
+			width: 30px;
+			height: 30px;
+			background: white;
+			border-radius: 50%;
+			margin-left: 55px;
+			margin-top: 170px;
+		}
+		.eyes > .eye1::before{
+			position: absolute;
+			content: '';
+			margin-left: 10px;
+			margin-top: 10px;
+			width: 20px;
+			height: 20px;
+			background: black;
+			border-radius: 50%;
+		}
+		.eyes > .eye2::before{
+			position: absolute;
+			content: '';
+			margin-right: 10px;
+			margin-top: 10px;
+			width: 20px;
+			height: 20px;
+			background: black;
+			border-radius: 50%;
+		}
+
+		.eyes > .eye1::after{
+			position: absolute;
+			content: '';
+			margin-left: 20px;
+			margin-top: 12px;
+			rotate: 20deg;
+			width: 6px;
+			height: 4px;
+			background: white;
+			border-radius: 100%;
+		}
+		.eyes > .eye2::after{
+			position: absolute;
+			content: '';
+			margin-left: 11px;
+			margin-top: 12px;
+			rotate: 20deg;
+			width: 6px;
+			height: 4px;
+			background: white;
+			border-radius: 100%;
+		}
+
+		.face > .nose{
+			width: 50px;
+			height: 30px;
+			background: linear-gradient(to top, #000, #a800f4);
+			border-radius: 50%;
+			margin-left: 150px;
+			margin-top: -25px;
+			transform: rotate(-45deg);
+		}
+		.face > .nose::before {
+			position: absolute;
+			content: '';
+			margin-left: 30px;
+			margin-top: 5px;
+			rotate: 20deg;
+			width: 15px;
+			height: 5px;
+			background: white;
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="outer">
+			<h1>Ethika</h1>
+		</div>
+		<div class="face">
+			<div class="eyes">
+				<div class="eye1"></div>
+				<div class="eye2"></div>
+			</div>
+			<div class="nose"></div>
+		</div>
+	</div>
+
+</body>
+</html>
